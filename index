@@ -1,0 +1,185 @@
+!DOCTYPE html>
+<html lang="ru">
+  <style> .hero {
+            background: linear-gradient(rgba(107, 201, 255, 0.7), rgba(107, 201, 255, 0.7)), url('hero-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: BLACK;
+        }
+        
+        .hero-content h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            animation: fadeIn 1.5s ease;
+        }
+        
+        .hero-content p {
+            font-size: 20px;
+            margin-bottom: 30px;
+            animation: fadeIn 2s ease;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: rgba(39, 124, 173, 0.7);
+            color: rgba(107, 201, 255, 0.7);
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            animation: fadeIn 2.5s ease;
+        }
+        
+        .btn:hover {
+            background-color: black;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 60px 0 20px;
+        }
+        
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+        
+        .footer-col {
+            flex: 0 0 calc(25% - 30px);
+            margin: 0 15px;
+        }
+        
+        .footer-col h3 {
+            color: rgba(39, 124, 173, 0.7);
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+        
+        .footer-col ul {
+            list-style: none;
+        }
+        
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-col ul li a {
+            color: #ccc;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .footer-col ul li a:hover {
+            color: white;
+        }
+        
+        .contact-info {
+            margin-top: 20px;
+        }
+        
+        .contact-info p {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .contact-info i {
+            margin-right: 10px;
+            color: rgba(39, 124, 173, 0.7);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #444;
+            color: #ccc;
+            font-size: 14px;
+        }</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Праздник в каждый дом - Организация детских праздников</title>
+<section class="hero">
+        <div class="container hero-content">
+            <div>
+                <h1>Подарим волшебство для Ваших детей!</h1>
+                <p>Организуем незабываемый праздник для вашего ребенка</p>
+                <a href="search.html" class="btn">Забронировать сейчас</a>
+            </div>
+        </div>
+    </section>
+  <nav class="main-nav">
+    <ul>
+      <li><a href="#promo">Акции</a></li>
+      <li><a href="search.html">Поиск</a></li>
+      <li><a href="booking.html">Управление бронированием</a></li>
+    </ul>
+  </nav>
+</header>
+<section class="booking-steps">
+  <h2>Как организовать праздник в 6 простых шагов</h2>
+  <div class="steps-container">
+    
+  </div>
+</section>
+<form class="search-form" action="search.html" method="GET">
+  <select name="region" required>
+    <option value="">Выберите зону</option>
+    <option value="moscow">Москва</option>
+    <option value="saint-peterburg">Санкт-Петербург</option>
+    <option value="volgograd">Волгоград</option>
+    <!-- Опции регионов -->
+  </select>
+  
+  <input type="date" name="event-date" required>
+  
+  <div class="guests">
+    <label>Взрослые: <input type="number" name="adults" min="1" max="50" value="2"></label>
+    <label>Дети: <input type="number" name="children" min="1" max="50" value="5"></label>
+  </div>
+  
+  <button type="submit">Найти локации</button>
+</form>
+<footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>О компании</h3>
+                    <p style="color: #ccc;">Организация детских праздников с 2010 года. Более 5000 успешных мероприятий.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Контакты</h3>
+                    <div class="contact-info">
+                        <p><i>✆</i> 8 (800) 111-20-20</p>
+                        <p><i>✉</i> info@prazdnik.ru</p>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Навигация</h3>
+                    <ul>
+                        <li><a href="http://xxxxxx-m1.wsr.ru/return">Возврат</a></li>
+                        <li><a href="http://xxxxxx-m1.wsr.ru/feedback">Обратная связь</a></li>
+                        <li><a href="#">Акции</a></li>
+                        <li><a href="search.html">Поиск</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Часы работы</h3>
+                    <p style="color: #ccc;">Пн-Пт: 9:00 - 21:00<br>Сб-Вс: 10:00 - 22:00</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2023 Праздник в каждый дом. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
